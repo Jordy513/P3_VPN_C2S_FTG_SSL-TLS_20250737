@@ -150,13 +150,13 @@ Puertos involucrados:
 El laboratorio implementa una VPN Client-to-Site donde un cliente externo (Linux o Windows) se conecta al portal SSL-VPN del FortiGate. Una vez autenticado, el cliente recibe una IP del pool de túnel y puede acceder a la red interna del FortiGate (`20.25.37.128/25`).
 
 ```
-      Cliente Linux/Windows                              FortiGate
-      (fuera de la red interna)                    ┌───────────────────┐
-              │                                     │                   │
-              │  port1: 192.168.1.10/24             │                   │
-              └─────────────────────────────────────┤ port1             │
-                    TLS/SSL — TCP 10443              │                   │
-                    (SSL-VPN Tunnel Mode)            │  port2            │
+      Cliente Linux/Windows                                 FortiGate
+      (fuera de la red interna)                       ┌───────────────────┐
+              │                                       │                   │
+              │  port1: 192.168.1.10/24               │                   │
+              └───────────────────────────────────────┤ port1             │
+                    TLS/SSL — TCP 10443               │                   │
+                    (SSL-VPN Tunnel Mode)             │  port2            │
                                                       │ 20.25.37.129/25   │
                                                       └─────────┬─────────┘
                                                                 │
