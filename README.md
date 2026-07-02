@@ -42,8 +42,6 @@ El objetivo de este laboratorio es **implementar y verificar una VPN Client-to-S
 * La verificación de conectividad desde el cliente remoto hacia la red interna (`20.25.37.128/25`) a través del túnel SSL-VPN, incluyendo la particularidad del `traceroute` sobre un túnel punto a punto.
 * La verificación completa del laboratorio **exclusivamente desde la interfaz gráfica (GUI)** de FortiOS.
 
-Este laboratorio se realiza en un entorno controlado con fines **exclusivamente educativos** dentro del curso de Seguridad de Redes del ITLA.
-
 ---
 
 ## 2. Marco Teórico
